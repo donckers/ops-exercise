@@ -1,0 +1,8 @@
+name 'ops-exercise'
+depends 'apt'
+depends 'mysql'
+depends 'mysql2_chef_gem'
+depends 'database'
+depends 'hhvm'
+depends 'wordpress'
+depends 'tar'
