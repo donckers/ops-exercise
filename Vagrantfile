@@ -78,10 +78,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # to skip installing and copying to Vagrant's shelf.
   # config.berkshelf.except = []
 
-  #config.vm.provision :chef_solo do |chef|
-  config.vm.provision :chef_zero do |chef|
-  #config.vm.provision :chef_client do |chef|
-    chef.nodes_path = "nodes"
+  config.vm.provision :chef_solo do |chef|
     chef.json = {
       wordpress: {
         db: {
